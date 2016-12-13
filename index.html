@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Riot.js | learning all the things</title>
+
+    <!-- external stylesheets for the purpose of the demo ... preferred to have all styles with the .tag files -->
+    <link rel="stylesheet" href="style/stack.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- if not using a build process, you can easily add the riot compiler to the page -->
+    <!-- <script src="js/riot+compiler.min.js"></script> -->
+  </head>
+  <body>
+    <div class="container">
+      <my-app />
+
+      <script src="/dist/app.min.js"></script>
+
+
+      <!-- You could manually add each tag to the page with the following code -->
+
+      <!-- <script src="tags/hello-world.tag" type="riot/tag"></script> -->
+      <!-- <script src="tags/hello-world-2.tag" type="riot/tag"></script> -->
+
+      <!-- script>
+        // Mount riot tag to specific DOM element and pass in opts
+        // This is cool because you can render a UI without the surrounding Riot tags if needed.
+        // Note: loading tag into DOM, you lose scoping feature
+        riot.mount('.panel', 'hello-world', {name:'Foo Bar'});
+        // Don't know a way to get this to work with browserify ¯\_(ツ)_/¯
+
+        // Load wildcard Riot tags
+        riot.mount('*');
+      </script -->
+    </div>
+  </body>
+</html>
